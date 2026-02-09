@@ -41,4 +41,13 @@ class Ship:
     def center_ship(self):
         """Center the ship on the screen."""
         self.rect.midbottom = self.screen_rect.midbottom
-        self.x = float(self.rect.x)
+        self.x = float(self.rect.x)\
+
+    def _check_aliens_bottom(self):
+        """Check if any aliens have reached the bottom of the screen."""
+        screen_rect = self.screen.get_rect()
+        for alien in self.aliens.sprites():
+            if alien.rect.bottom >= screen_rect.bottom:
+                # Treat this the same as if the ship got hit.
+                self._ship_hit()
+                break   
