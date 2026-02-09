@@ -7,7 +7,7 @@ from bullet import Bullet
 from alien import Alien
 
 class AlienInvasion:
-        # Overall class to manage game assets and behavior.
+    # Overall class to manage game assets and behavior.
 
     def __init__(self):
         pygame.init()
@@ -25,8 +25,9 @@ class AlienInvasion:
         self.aliens = pygame.sprite.Group()
 
         self._create_fleet()
-def _create_fleet(self):
-        """Create the fleet of aliens."""
+
+    def _create_fleet(self):
+        # Create a fleet of aliens.
         # Make an alien.
         alien = Alien(self)
         self.aliens.add(alien)
@@ -95,4 +96,4 @@ def _create_fleet(self):
 if __name__ == '__main__':
     # Make a game instance, and run the game.
     ai = AlienInvasion()
-    ai.run_game() 
+    ai.run_game()
