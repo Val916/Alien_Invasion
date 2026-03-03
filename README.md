@@ -43,11 +43,13 @@ This is the learning project from the great book 'Python Crash Course' by Eric M
 4. The game will launch in fullscreen!
 
 ### How to Play the Game:
-- Click the **Play** button to start
-- Use your **mouse** to move your ship left and right
-- Click to **shoot bullets** at aliens
+- The game opens in **FULLSCREEN** mode
+- Click the **Play** button with your mouse to start
+- Use **LEFT and RIGHT arrow keys** to move your ship
+- Press **SPACEBAR** to shoot bullets at aliens
+- Press **Q** to quit the game anytime
 - Destroy all aliens to advance to the next level
-- Don't let aliens reach the bottom!
+- Don't let aliens reach the bottom or touch your ship!
 
 ### Need Help?
 If you get an error:
