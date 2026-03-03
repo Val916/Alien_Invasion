@@ -163,6 +163,11 @@ class AlienInvasion:
                 self._change_fleet_direction()
                 break
 
+    def _check_play_button(self, mouse_pos):
+        # Start a new game when the player clicks Play.
+        if self.play_button.rect.collidepoint(mouse_pos):
+            self.stats.game_active = True
+
     def _change_fleet_direction(self):
         # Drop the entire fleet and change the fleet's direction.
         for alien in self.aliens.sprites():
